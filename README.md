@@ -1,10 +1,9 @@
 # 🖼️ Object Recognition Using OpenCV
 ![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.10-green?style=for-the-badge&logo=opencv)
-![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
 
-A computer vision project developed using **OpenCV** and the **MobileNet SSD** deep learning model to detect and classify multiple objects in static images. The application identifies supported objects, draws bounding boxes with confidence scores, and automatically saves the processed results.
 
+A computer vision project built with OpenCV and the MobileNet SSD model to detect and classify multiple objects in static images.
 ---
 
 # 🚀 Features
