@@ -1,16 +1,20 @@
 # 🖼️ Object Recognition Using OpenCV
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.10-green?style=for-the-badge&logo=opencv)
+![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)
 
-A computer vision project developed using **OpenCV** and the **MobileNet SSD** deep learning model to detect and classify multiple objects in static images. The project processes input images, identifies supported objects, draws bounding boxes with confidence scores, and automatically saves the detection results.
+A computer vision project developed using **OpenCV** and the **MobileNet SSD** deep learning model to detect and classify multiple objects in static images. The application identifies supported objects, draws bounding boxes with confidence scores, and automatically saves the processed results.
 
 ---
 
 # 🚀 Features
 
 - Detect multiple objects in static images.
+- Recognize different object categories using MobileNet SSD.
+- Display object labels with confidence scores.
 - Draw bounding boxes around detected objects.
-- Display object names with confidence scores.
 - Automatically save processed images.
-- Uses the pre-trained MobileNet SSD model.
+- Simple and easy-to-use Python implementation.
 
 ---
 
@@ -54,14 +58,15 @@ Object-Recognition-Using-OpenCV
 
 | Step | Description |
 |------|-------------|
-| **① Prepare the Project** | Organize the project folders and add the required images and model files. |
-| **② Load the Model** | Load the MobileNet SSD model using OpenCV DNN. |
-| **③ Read Images** | Read the input images from the `images` folder. |
-| **④ Detect Objects** | Process each image and detect supported objects with confidence scores. |
-| **⑤ Draw Results** | Draw bounding boxes and display object labels on the detected objects. |
-| **⑥ Save Output** | Save the processed images automatically inside the `results` folder. |
+| **① Project Setup** | Organize the project folders and prepare the required files. |
+| **② Model Loading** | Load the MobileNet SSD model using OpenCV DNN. |
+| **③ Image Processing** | Read the input images and prepare them for object detection. |
+| **④ Object Detection** | Detect supported objects and calculate confidence scores. |
+| **⑤ Visualization** | Draw bounding boxes and display object labels on each image. |
+| **⑥ Save Results** | Save the processed images automatically inside the `results` folder. |
 
 ---
+
 # ⚙️ Installation & Usage
 
 Follow the steps below to set up and run the project successfully.
@@ -89,7 +94,7 @@ conda activate object_recognition
 
 ### 3. Install the Required Dependencies
 
-Install all required Python libraries.
+Install the required Python libraries.
 
 ```bash
 pip install opencv-python==4.10.0.84 numpy
@@ -99,7 +104,7 @@ pip install opencv-python==4.10.0.84 numpy
 
 ### 4. Prepare the Model Files
 
-Copy the following MobileNet SSD model files into the `model` directory:
+Place the following MobileNet SSD model files inside the `model` folder.
 
 ```text
 deploy.prototxt
@@ -108,15 +113,15 @@ mobilenet_iter_73000.caffemodel
 
 ---
 
-### 5. Add the Input Images
+### 5. Add Input Images
 
-Place the images you want to process inside the `images` directory.
+Place the images you want to analyze inside the `images` folder.
 
 ---
 
-### 6. Execute the Program
+### 6. Run the Project
 
-Run the following command to start the object detection process.
+Execute the following command.
 
 ```bash
 python object_recognition.py
@@ -130,14 +135,15 @@ After execution, the program will automatically:
 
 - Read the input images.
 - Detect supported objects.
-- Draw bounding boxes and confidence scores.
-- Save the processed images in the `results` folder.
+- Draw bounding boxes around detected objects.
+- Display object labels with confidence scores.
+- Save the processed images inside the `results` folder.
 
 ---
 
 # 🧠 MobileNet SSD Supported Classes
 
-The pre-trained MobileNet SSD model can recognize the following object categories.
+The MobileNet SSD model used in this project supports detecting the following object categories.
 
 | 👤 People & Vehicles | 🐾 Animals | 🏠 Indoor Objects |
 |----------------------|------------|-------------------|
@@ -169,7 +175,7 @@ The following examples demonstrate the object detection results produced by the 
 | Dog | ✅ Detected |
 | Person | ⚠️ Incorrect Prediction |
 
-> **Note:** One dog was mistakenly classified as a person because the project uses a pre-trained MobileNet SSD model, which may occasionally produce inaccurate predictions.
+> **Note:** One dog was incorrectly classified as a person because the project uses a pre-trained MobileNet SSD model, which may occasionally produce inaccurate predictions.
 
 ---
 
@@ -228,13 +234,13 @@ The following examples demonstrate the object detection results produced by the 
 
 # ✅ Output
 
-After running the project, the program will:
+After running the project, the application will:
 
-- Read all images from the **images** folder.
+- Read all images from the `images` folder.
 - Detect supported objects using MobileNet SSD.
 - Draw bounding boxes around detected objects.
-- Display labels and confidence scores.
-- Save the processed images automatically inside the **results** folder.
+- Display object labels with confidence scores.
+- Save the processed images automatically inside the `results` folder.
 
 ---
 
